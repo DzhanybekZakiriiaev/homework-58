@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3a455d2-1690-47b7-80a6-eca3856f2dc1" name="Changes" comment="created project">
+    <list default="true" id="b3a455d2-1690-47b7-80a6-eca3856f2dc1" name="Changes" comment="added couple of methods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +54,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681030660529</updated>
-      <workItem from="1681030661833" duration="1514000" />
+      <workItem from="1681030661833" duration="2357000" />
     </task>
     <task id="LOCAL-00001" summary="created project">
       <created>1681032982936</created>
@@ -65,7 +63,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681032982936</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added couple of methods">
+      <created>1681034032832</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681034032832</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,6 +89,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created project" />
-    <option name="LAST_COMMIT_MESSAGE" value="created project" />
+    <MESSAGE value="added couple of methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="added couple of methods" />
   </component>
 </project>

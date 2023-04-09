@@ -12,8 +12,9 @@ const post = {
     title: "My post",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2LA_RXo5SsEGZvSHqtA9Y5JQStY6a0u37Iw&usqp=CAU",
     content: "It is my new post",
-    userId: user.id,
+    user: user,
     liked: false,
+    date: new Date(),
     comments: []
 };
 
@@ -47,17 +48,33 @@ function togglePostLike(postId) {
 }
 
 function createCommentElement(comment) {
-    const commentEl = document.createElement('div');
-    commentEl.innerHTML = `
+    const element = document.createElement('div');
+    element.innerHTML = `
           <div>
             <p>${comment.text}</p>
             <p>${comment.date}</p>
             <p>${comment.user.email}</p>
           </div>
         `;
-    return commentEl;
+    return element;
 }
 
+function createPostElement(post) {
+    const element = document.createElement('div');
+    element.innerHTML = `
+          <div>
+            <img class="d-block w-100" src="${post.image}" alt="Post image">
+            <p>${post.description}</p>
+            <p>${post.date}</p>
+            <p>${post.user.email}</p>
+          </div>
+        `;
+    post.comments.forEach(comment => {
+        const comm = createCommentElement(comment);
+        element.appendChild(comm);
+    });
+    return element;
+}
 
 function showSplashScreen() {
     const splashScreen = document.getElementById('splash');
