@@ -25,7 +25,6 @@ const comment = {
     postId: post.id,
     date : new Date()
 };
-//все объекты связаны подобно базе данных(по параметру id)
 
 const posts = [post];
 
@@ -84,4 +83,10 @@ function showSplashScreen() {
 function hideSplashScreen() {
     const splashScreen = document.getElementById('splash');
     splashScreen.style.display = 'none';
+}
+
+function addPost(post) {
+    const postsContainer = document.getElementById('posts');
+    postsContainer.appendChild(post);
+    posts.push(post);
 }
