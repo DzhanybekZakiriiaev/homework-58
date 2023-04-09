@@ -17,15 +17,18 @@ const post = {
     comments: []
 };
 
-const comments = {
+const comment = {
     id: 1,
     text: "Great post!",
-    userId: user.id,
-    postId: post.id
+    user: user,
+    postId: post.id,
+    date : new Date()
 };
 //все объекты связаны подобно базе данных(по параметру id)
 
 const posts = [post];
+
+const comments = [comment];
 
 function addPost(newPost) {
     posts.push(newPost);
@@ -41,4 +44,27 @@ function togglePostLike(postId) {
            posts[i].liked = !posts[i].liked;
        }
    }
+}
+
+function createCommentElement(comment) {
+    const commentEl = document.createElement('div');
+    commentEl.innerHTML = `
+          <div>
+            <p>${comment.text}</p>
+            <p>${comment.date}</p>
+            <p>${comment.user.email}</p>
+          </div>
+        `;
+    return commentEl;
+}
+
+
+function showSplashScreen() {
+    const splashScreen = document.getElementById('splash');
+    splashScreen.style.display = 'block';
+}
+
+function hideSplashScreen() {
+    const splashScreen = document.getElementById('splash');
+    splashScreen.style.display = 'none';
 }
